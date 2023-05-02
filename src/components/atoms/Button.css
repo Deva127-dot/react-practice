@@ -1,0 +1,21 @@
+.btn{
+    background-color: blueviolet;
+    height: 730px;
+}
+.img{
+    margin-top: 100px;
+    box-shadow: 2px 2px 50px black;
+    border-radius: 2px;
+}
+.button{
+    background-color: blue;
+    height: 30px;
+    width: 200px;
+    border: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    color: rgb(177, 191, 203);
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
