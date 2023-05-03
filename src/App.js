@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import ProfileCard from './components/atoms/Page';
+// import Test from './components/atoms/test';
+import Page from './components/atoms/Page';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +20,11 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      {/* <ProfileCard /> */}
+        {/* <Test /> */}
+        {/* <Test2 /> */}
+        <Page />
     </div>
   );
 }
