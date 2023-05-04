@@ -1,0 +1,29 @@
+.outer{
+    text-align: center;
+    margin-top: 300px;
+    justify-content: center;
+    background-color: cornflowerblue;
+    height: 715px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.input{
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    text-align: center;
+    margin-top: 300px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px black;
+    border-color: black;
+    height: 25px;
+}
+.btn{
+    background-color:  aquamarine;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px black;
+    height: 30px;
+    border-color: black;
+}
