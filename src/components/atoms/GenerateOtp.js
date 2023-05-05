@@ -1,41 +1,46 @@
-import {useState} from 'react';
-import './GenerateOtp.css'
+import axios from "axios";
+import { useState } from "react";
+import "./GenerateOtp.css";
 
-export default function GenerateOTP(){
-const[mobile, setMobile]=useState('')
+export default function GenerateOTP() {
+  const [mobile, setMobile] = useState(" ");
 
-function handleChange(e){
-    setMobile(e.target.value)
-}
+  function handleChange(e) {
+    setMobile(e.target.value);
+  } 
 
-  async function handleClick(e){
-    e.preventDefault()
-    
-    if(mobile.length !==10){
-        alert("please Enter a Valid number")
+  async function handleClick(e) {
+    e.preventDefault();
+
+    if (mobile.length !== 10) {
+      alert("please Enter a Valid number");
+    }else{
+        alert("OTP send successful")
     }
 
-
-    const url="https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP";
-    const data={mobile:mobile};
+    const url = "https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP";
+    const data = { mobile: mobile };
     try {
-        const response = await fetch.post(url,data,{header: {'Content-type':'application.json'}});
-        console.log(response);
-    } catch(error){
-        console.log("error", error)
+      const response = await axios.post(url, data, {
+        header: { "Content-type": "application.json" },
+      });
+      console.log(response);
+    } catch (error) {
+      console.log("error", error);
     }
-    setMobile(' ')
-
+    setMobile(" ");
   }
-    return(
-        <div className='outer'>
-            <input className='input'
-            type='number' onChange={handleChange} placeholder="Enter your number"/>
-            <button
-            className='btn'
-            onClick={handleClick}>Generate OTP</button>
-
-       
-        </div>
-    )
+  return (
+    <div className="outer">
+      <input
+        className="input"
+        type="number"
+        onChange={handleChange}
+        placeholder="Enter your number"
+      />
+      <button className="btn" onClick={handleClick}>
+        Generate OTP
+      </button>
+    </div>
+  );
 }
