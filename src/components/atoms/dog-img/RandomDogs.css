@@ -1,0 +1,29 @@
+.random{
+    margin: auto;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0%;
+    justify-content: center;
+    text-align: center;
+}
+.img{  
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 80px black;
+}
+.txt{
+    margin-top: 200px;
+    text-shadow: 5px 5px 7px blue;
+    /* color: blue; */
+    font-size: 40px;
+}
+.body{
+    margin-top: 0px;
+    background-color: aqua;
+    height: 750px;
+
+}
