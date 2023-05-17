@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+.main{
+    width: 200px;
+    border: 1px solid black;
+    margin: 200px 700px;
+    box-shadow: 2px 2px 20px black;
+    padding: 10px;
+    background-color: aquamarine;
+}
+button{
+    margin-right: 10px;
+    background-color: rgb(64, 64, 255);
+    color: antiquewhite;
+    /* box-shadow: 0px 0px 10px black; */
+    margin-left: 5px;
+}
+.sub_main{
+    display: flex;
+    margin: 10px 3px
+}
