@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-size: medium;
+  font-weight: bold;
+
+  font-family: 'Cambria';
 }
 
 .App-logo {
@@ -35,4 +39,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+body{
+  background-color: aqua;
 }
