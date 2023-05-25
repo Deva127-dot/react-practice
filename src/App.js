@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useState} from 'react'
+import { useSelector , useDispatch} from 'react-redux'
+import { addTodo } from './components/todoslice'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+
+const [inputvalue , setinputvalue] = useState("")
+const todos = useSelector((state) => state.todos);
+const dispatch = useDispatch();
+
+
+const handlerchange =(e) =>{
+
+  setinputvalue(e.target.value)
 }
 
-export default App;
+const handleradd = () => {
+  if(inputvalue.trim() !== ''){
+    dispatch(addTodo(inputvalue));
+    setinputvalue('')
+  }
+}
+
+
+
+
+
+  return (
+    <div>
+      <h1>TODO LIST</h1>
+      <input type="text"  value={inputvalue}  onChange={handlerchange}/>
+      <button onClick={handleradd}>+</button>
+
+      <ul>
+        {todos.map ((todo) => (
+          <li key={todo.id}>{todo.title} </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
