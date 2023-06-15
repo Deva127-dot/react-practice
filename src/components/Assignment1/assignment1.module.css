@@ -32,3 +32,11 @@
     cursor: pointer;
     margin-top: 10px;
 }
+@media  (max-width:1700px){
+    .sub_main{
+        display: block;
+        justify-content: flex-start;
+        text-align: center;
+        margin-left: 0px;
+    }
+}
