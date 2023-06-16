@@ -1,10 +1,10 @@
 import React from 'react';
-import ProfileCard from './components/Assignment3/Profile Card/ProfileCard';
+import ProductDetails from './components/Assignment4/Product Details/ProductDetails';
 
 function App() {
   return (
     <div className="App">
-      <ProfileCard/>
+      <ProductDetails/>
     </div>
   );
 }
