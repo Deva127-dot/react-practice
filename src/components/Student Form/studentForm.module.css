@@ -83,5 +83,6 @@ body{
 .tableData{
     font-size: 20px;
     font-family: 'calibri';
-    background-color: cornflowerblue;
+    background-color: rgb(54, 120, 244);
+    color: white;
 }
